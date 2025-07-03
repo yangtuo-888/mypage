@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>诚邀合作伙伴｜2025津巴布韦烟草博览会</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 所有样式保持不变 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.5;
+            font-size: 14px;
+            padding: 8px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+        }
+        
+        header {
+            background: linear-gradient(90deg, #2c5f2d 0%, #3e8e41 100%);
+            color: white;
+            text-align: center;
+            padding: 18px 12px;
+            position: relative;
+        }
+        
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8px 0;
+        }
+        
+        .main-title {
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.3;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 13px;
+            opacity: 0.9;
+            max-width: 300px;
+        }
+        
+        .highlight {
+            color: #f1c40f;
+            font-weight: bold;
+        }
+        
+        .event-info {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 10px;
+            margin: 12px 0;
+            text-align: left;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 13px;
+        }
+        
+        .info-item i {
+            width: 24px;
+            font-size: 14px;
+            color: #f1c40f;
+        }
+        
+        .contact-card {
+            background: #f1c40f;
+            color: #2c3e50;
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-card i {
+            margin-right: 6px;
+        }
+        
+        section {
+            padding: 18px 15px;
+            position: relative;
+        }
+        
+        h2 {
+            color: #2c5f2d;
+            font-size: 15px;
+            margin-bottom: 14px;
+            padding-bottom: 7px;
+            border-bottom: 2px solid #f1c40f;
+            display: inline-block;
+        }
+        
+        .section-icon {
+            margin-right: 6px;
+            color: #27ae60;
+            font-size: 14px;
+        }
+        
+        .partnership-intro {
+            text-align: center;
+            margin: 14px 0;
+            padding: 14px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #27ae60;
+            font-size: 13px;
+        }
+        
+        .partnership-intro p {
+            margin-bottom: 10px;
+        }
+        
+        .partnership-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+            gap: 12px;
+            margin-top: 18px;
+        }
+        
+        .partnership-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            border-top: 3px solid #27ae60;
+            position: relative;
+        }
+        
+        .partnership-card h3 {
+            color: #2c5f2d;
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .partnership-card h3 i {
+            margin-right: 8px;
+            font-size: 15px;
+            color: #f39c12;
+        }
+        
+        .partnership-card ul {
+            padding-left: 18px;
+        }
+        
+        .partnership-card li {
+            margin-bottom: 7px;
+            font-size: 13px;
+        }
+        
+        .benefit-badge {
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            background: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 7px;
+            margin: 14px 0;
+        }
+        
+        .stat-card {
+            background: #eafaf1;
+            border-radius: 6px;
+            padding: 11px 7px;
+            text-align: center;
+            border-left: 3px solid #27ae60;
+            font-size: 13px;
+        }
+        
+        .stat-number {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2c5f2d;
+            margin-bottom: 3px;
+        }
+        
+        .booth-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            font-size: 13px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .booth-table th {
+            background: #2c5f2d;
+            color: white;
+            padding: 9px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .booth-table td {
+            padding: 9px;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+        
+        .booth-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .booth-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .price {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 7px;
+            margin: 14px 0;
+        }
+        
+        .gallery-item {
+            border-radius: 6px;
+            overflow: hidden;
+            height: 95px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7f8c8d;
+            font-size: 12px;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+        
+        .gallery-item::after {
+            content: "展会图片";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: #888;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .timb-benefits {
+            background: linear-gradient(135deg, #2c5f2d 0%, #3e8e41 100%);
+            color: white;
+            padding: 18px 15px;
+            border-radius: 0;
+        }
+        
+        .timb-benefits h2 {
+            color: #f1c40f;
+            border-bottom: 2px solid #f1c40f;
+            font-size: 15px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+            gap: 11px;
+            margin-top: 14px;
+        }
+        
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 14px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .benefit-card i {
+            font-size: 18px;
+            color: #f1c40f;
+            margin-bottom: 8px;
+        }
+        
+        .benefit-card h3 {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        
+        .benefit-card p {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 22px 15px;
+            background: #f8f9fa;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        
+        .cta-button {
+            display: block;
+            background: linear-gradient(90deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(231, 76, 60, 0.25);
+            transition: all 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(231, 76, 60, 0.35);
+        }
+        
+        .contact-info {
+            background: #2c5f2d;
+            color: white;
+            padding: 18px 15px;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 14px;
+            color: #f1c40f;
+            font-size: 15px;
+        }
+        
+        .contact-details {
+            font-size: 13px;
+            margin: 9px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-details i {
+            margin-right: 7px;
+            color: #f1c40f;
+            font-size: 13px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 14px;
+            color: #7f8c8d;
+            font-size: 12px;
+            background: white;
+            line-height: 1.6;
+        }
+        
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 14px;
+            padding: 0 15px;
+        }
+        
+        .partner-logo {
+            height: 36px;
+            background: #eafaf1;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2c5f2d;
+            font-size: 12px;
+            padding: 0 14px;
+            font-weight: bold;
+        }
+        
+        .leaf-decoration {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        
+        .leaf-1 {
+            top: 10px;
+            left: 10px;
+            transform: rotate(15deg);
+        }
+        
+        .leaf-2 {
+            bottom: 10px;
+            right: 10px;
+            transform: rotate(-15deg);
+        }
+        
+        .partnership-banner {
+            background: linear-gradient(90deg, #1a5c2c 0%, #2c7d46 100%);
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            margin: 14px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+        
+        .partnership-banner h3 {
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #f1c40f;
+        }
+        
+        .gallery-section {
+            margin: 20px 0;
+        }
+        
+        .gallery-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #2c5f2d;
+            font-size: 15px;
+        }
+        
+        .gallery-title i {
+            margin-right: 8px;
+            color: #27ae60;
+        }
+        
+        .gallery-description {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        @media (max-width: 340px) {
+            .main-title {
+                font-size: 16px;
+            }
+            
+            .subtitle {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title-container">
+                <div class="main-title">2025津巴布韦烟草博览会</div>
+                <div class="subtitle">诚邀合作伙伴 · 开拓<span class="highlight">50亿美元产业蓝海</span></div>
+            </div>
+            
+            <div class="event-info">
+                <div class="info-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>时间：2025年9月17日—18日</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>地点：津巴布韦哈拉雷彩虹大厦会议中心</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-user"></i>
+                    <span>联系人：Gavin</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>联系方式：13548940470（微信同号）</span>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <i class="fas fa-star"></i> 早鸟合作优惠：即日签约享特别权益
+            </div>
+            
+            <div class="leaf-decoration leaf-1">
+                <i class="fas fa-leaf" style="font-size: 35px; color: #f1c40f;"></i>
+            </div>
+        </header>
+        
+        <!-- 烟草产业介绍 -->
+        <section class="gallery-section">
+            <div class="gallery-title">
+                <i class="fas fa-seedling"></i>
+                <h2>津巴布韦烟草产业</h2>
+            </div>
+            <div class="gallery-description">
+                津巴布韦是世界第三大烟草生产国，以高品质烟叶闻名全球，年产量超2亿公斤。
+            </div>
+            <!-- 图片占位符已移除 -->
+        </section>
+        
+        <!-- 往届展会成果 -->
+        <section class="past-events">
+            <div class="leaf-decoration leaf-2">
+                <i class="fas fa-leaf" style="font-size: 35px; color: #27ae60;"></i>
+            </div>
+            
+            <h2><i class="fas fa-trophy section-icon"></i> 往届展会成果</h2>
+            <div class="past-event">
+                <h3>世界烟草非洲大会暨博览会</h3>
+                <p>作为非洲最具影响力的烟草行业盛会，上届展会吸引了全球烟草产业链的广泛参与，成果显著：</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">10,000+</div>
+                        <div>专业观众</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">300+</div>
+                        <div>参展企业</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$2.1亿</div>
+                        <div>现场成交额</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div>展商满意度</div>
+                    </div>
+                </div>
+                
+                <p>展会促成了中津多项重大合作，包括"烟草换农机"创新贸易模式的推广，为参展企业带来了实质性业务增长。</p>
+            </div>
+        </section>
+        
+        <!-- 博览会地点介绍 -->
+        <section class="gallery-section">
+            <div class="gallery-title">
+                <i class="fas fa-map-marked-alt"></i>
+                <h2>博览会举办地</h2>
+            </div>
+            <div class="gallery-description">
+                哈拉雷彩虹大厦会议中心位于市中心黄金地段，拥有现代化设施和便捷交通，是举办国际展会的理想场所。
+            </div>
+            <!-- 图片占位符已移除 -->
+        </section>
+        
+        <!-- 合作机遇 -->
+        <section class="partnership-opportunities">
+            <div class="partnership-banner">
+                <h3>为什么与我们合作？</h3>
+                <p>作为非洲最大的烟草产业平台，我们为合作伙伴提供独一无二的资源网络和商业机会</p>
+            </div>
+            
+            <h2><i class="fas fa-handshake section-icon"></i> 合作机遇</h2>
+            
+            <div class="partnership-types">
+                <div class="partnership-card">
+                    <div class="benefit-badge">核心合作</div>
+                    <h3><i class="fas fa-industry"></i> 烟草产业链合作</h3>
+                    <ul>
+                        <li>对接津巴布韦14万烟农和37家收购商</li>
+                        <li>参与烟草种植、加工、贸易全链条合作</li>
+                        <li>获取优质烟草原料稳定供应渠道</li>
+                        <li>开发替代作物(澳洲坚果/工业大麻)合作项目</li>
+                    </ul>
+                </div>
+                
+                <div class="partnership-card">
+                    <div class="benefit-badge">创新模式</div>
+                    <h3><i class="fas fa-sync-alt"></i> "烟草换农机"合作</h3>
+                    <ul>
+                        <li>参与中津创新贸易模式</li>
+                        <li>拓展非洲农业机械市场</li>
+                        <li>建立长期稳定的贸易关系</li>
+                        <li>获得政府政策支持与补贴</li>
+                    </ul>
+                </div>
+                
+                <div class="partnership-card">
+                    <div class="benefit-badge">战略投资</div>
+                    <h3><i class="fas fa-chart-line"></i> 加工制造合作</h3>
+                    <ul>
+                        <li>投资津巴布韦烟草初加工厂建设</li>
+                        <li>合作建立卷烟生产线</li>
+                        <li>开发水烟、电子烟等新型烟草产品</li>
+                        <li>参与深加工技术升级项目</li>
+                    </ul>
+                </div>
+                
+                <div class="partnership-card">
+                    <div class="benefit-badge">平台合作</div>
+                    <h3><i class="fas fa-network-wired"></i> 博览会平台合作</h3>
+                    <ul>
+                        <li>成为博览会战略合作伙伴</li>
+                        <li>联合举办行业论坛和商务对接会</li>
+                        <li>获得专属展区和企业展示机会</li>
+                        <li>参与中津烟草产业联盟建设</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 合作价值 -->
+        <section class="industry-stats">
+            <h2><i class="fas fa-industry section-icon"></i> 合作价值</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">50亿+ $</div>
+                    <div>2025年产业目标</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30%</div>
+                    <div>年增长率</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6.71亿 $</div>
+                    <div>中津年贸易额</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">14万+</div>
+                    <div>潜在合作伙伴</div>
+                </div>
+            </div>
+            
+            <div class="partnership-intro">
+                <p>津巴布韦烟草产业正经历前所未有的发展机遇，2025年产业规模预计将达到50亿美元。</p>
+                <p>我们为合作伙伴提供：</p>
+                <p>• TIMB官方支持 • 一站式落地服务 • 中津贸易通道 • 全产业链资源</p>
+            </div>
+        </section>
+        
+        <!-- 合作伙伴权益 -->
+        <section class="timb-benefits">
+            <h2><i class="fas fa-crown section-icon"></i> 合作伙伴权益</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-key"></i>
+                    <h3>独家资源获取</h3>
+                    <p>优先对接烟草产业链核心资源</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>政策快速通道</h3>
+                    <p>投资许可5工作日审批</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>高端人脉网络</h3>
+                    <p>加入中津烟草产业联盟</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-percent"></i>
+                    <h3>特别合作补贴</h3>
+                    <p>享受最高80%展位补贴</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="cta-section">
+            <h2>立即成为我们的战略合作伙伴</h2>
+            <div class="cta-buttons">
+                <a href="https://www.wjx.top/vm/YUt93iB.aspx" class="cta-button" target="_blank">申请成为合作伙伴</a>
+                <a href="#" class="cta-button">获取合作方案</a>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h3>合作咨询</h3>
+            <div class="contact-details">
+                <i class="fas fa-user"></i> 联系人：Gavin（合作总监）
+            </div>
+            <div class="contact-details">
+                <i class="fas fa-phone"></i> 电话：13548940470（微信同号）
+            </div>
+            <div class="contact-details">
+                <i class="fas fa-envelope"></i> 邮箱：partnership@timb.co.zw
+            </div>
+            <div class="contact-details">
+                <i class="fas fa-map-marker-alt"></i> 地址：上海市青浦区虹桥世界中心L2幢
+            </div>
+        </div>
+        
+        <footer>
+            <div class="partner-logos">
+                <div class="partner-logo">TIMB</div>
+                <div class="partner-logo">MALLBEM</div>
+            </div>
+            <p>© 2025 津巴布韦烟草产业与营销委员会（TIMB）</p>
+            <p>茂本嘉汇（上海）有限公司（MALLBEM）联合主办</p>
+        </footer>
+    </div>
+    
+    <script>
+        // 简单的滚动效果增强
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // 仅对"获取合作方案"按钮显示提示
+                if(!this.getAttribute('href').includes('wjx.top')) {
+                    e.preventDefault();
+                    alert('感谢您对合作机会的关注！我们的合作总监将尽快与您联系。');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
